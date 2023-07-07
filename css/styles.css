@@ -244,9 +244,6 @@ body {
 }
 .features-icon-box {
   display: none;
-}
-.features-icon-box {
-  display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -847,6 +844,15 @@ body {
   | ADAPTIVE
   |============================
 */
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url(../images/hero-background@2x.jpg);
+  }
+}
 @media (min-width: 428px) {
   .container {
     width: 428px;
