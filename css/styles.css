@@ -475,6 +475,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   min-height: 584px;
+  max-height: calc(100% - 32px);
   width: calc(100% - 32px);
   padding: 72px 24px 24px 24px;
   background: var(--modal-background-color);
@@ -848,7 +849,7 @@ body {
   | ADAPTIVE
   |============================
 */
-@media (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
   .hero-section {
     background-image: linear-gradient(
         var(--hero-background-color),
