@@ -482,6 +482,7 @@ body {
     0px 1px 3px var(--modal-shadow-2), 0px 2px 1px var(--modal-shadow-3);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 .modal-close-button {
   display: flex;
@@ -771,6 +772,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
+  gap: 40px;
 }
 .mobile-menu-container.is-open {
   transform: translateY(0);
@@ -833,6 +836,7 @@ body {
 }
 .mobile-menu-social-media {
   width: calc(100% - 20px);
+  max-width: 333px;
   min-height: 40;
 }
 .mobile-menu-social-links {
