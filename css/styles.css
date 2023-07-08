@@ -298,6 +298,7 @@ margin-bottom: 8px;
 .social-links-item {
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
 }
 .social-links-link {
   width: 100%;
@@ -479,7 +480,7 @@ margin-bottom: 8px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 584px;
+  /* min-height: 584px; */
   max-height: calc(100% - 32px);
   width: calc(100% - 32px);
   padding: 72px 24px 24px 24px;
@@ -855,7 +856,9 @@ margin-bottom: 8px;
 }
 .mobile-menu-social-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 12px;
 }
 /**
   |============================
